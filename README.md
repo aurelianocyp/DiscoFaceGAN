@@ -68,6 +68,8 @@ conda activate disco
 conda install tensorflow==1.12.0
 conda install tensorflow-gpu==1.12.0
 #无需单独安装cuda与cudnn，因为conda安装的时候会自动选择合适的安装，建议别用pip安装TensorFlow
+#将https://drive.google.com/uc?id=1nT_cf610q5mxD_jACvV43w4SYBxsPUBq下载，主目录创建cache文件夹放进去
+#下载https://drive.google.com/uc?id=17L6-ENX3NbMsS3MSCshychZETLPtJnbS，放在主目录的cache1文件夹
 git clone https://github.com/microsoft/DiscoFaceGAN.git
 cd DiscoFaceGAN
 ```
