@@ -58,6 +58,9 @@ def z_to_lambda_mapping(latents):
             IDcoeff = CoeffDecoder(z = latents[:,:128],coeff_length = 160,ch_dim = 512, ch_depth = 3)
         with tf.variable_scope('exp'):
             EXPcoeff = CoeffDecoder(z = latents[:,128:128+32],coeff_length = 64,ch_dim = 256, ch_depth = 3)
+            #mat_data = scipy.io.loadmat('000002.mat')
+            #EXPcoeff = tf.convert_to_tensor(mat_data["exp"], dtype=tf.float32)
+            #print("EXPcoeff",type(EXPcoeff))
         with tf.variable_scope('gamma'):
             GAMMAcoeff = CoeffDecoder(z = latents[:,128+32:128+32+16],coeff_length = 27,ch_dim = 128, ch_depth = 3)
         with tf.variable_scope('rot'):
