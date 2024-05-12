@@ -56,7 +56,7 @@ The training code of our model are mainly borrowed from [StyleGAN](https://githu
 ## Testing requirements
 - Python 3.6. We recommend Anaconda3 with numpy 1.14.3 or newer.
 - Tensorflow 1.12 with GPU support.
-- CUDA toolkit 9.0 or newer, cuDNN 7.3.1 or newer. RTX3090
+- CUDA toolkit 9.0 or newer, cuDNN 7.3.1 or newer. RTX2080ti，不要3090
 
 ## Testing with pre-trained network
 1. Clone the repository:
