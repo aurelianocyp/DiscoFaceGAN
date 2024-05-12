@@ -56,12 +56,16 @@ The training code of our model are mainly borrowed from [StyleGAN](https://githu
 ## Testing requirements
 - Python 3.6. We recommend Anaconda3 with numpy 1.14.3 or newer.
 - Tensorflow 1.12 with GPU support.
-- CUDA toolkit 9.0 or newer, cuDNN 7.3.1 or newer.
+- CUDA toolkit 9.0 or newer, cuDNN 7.3.1 or newer. RTX3090
 
 ## Testing with pre-trained network
 1. Clone the repository:
 
 ```
+conda create -n disco python=3.6 numpy pandas
+conda init
+conda activate disco
+pip install tensorflow==1.12.0
 git clone https://github.com/microsoft/DiscoFaceGAN.git
 cd DiscoFaceGAN
 ```
