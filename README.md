@@ -65,7 +65,9 @@ The training code of our model are mainly borrowed from [StyleGAN](https://githu
 conda create -n disco python=3.6 numpy pandas
 conda init
 conda activate disco
-pip install tensorflow==1.12.0
+conda install tensorflow==1.12.0
+conda install tensorflow-gpu==1.12.0
+#无需单独安装cuda与cudnn，因为conda安装的时候会自动选择合适的安装，建议别用pip安装TensorFlow
 git clone https://github.com/microsoft/DiscoFaceGAN.git
 cd DiscoFaceGAN
 ```
