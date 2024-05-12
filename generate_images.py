@@ -74,6 +74,8 @@ def truncate_generation(Gs,inputcoeff,rate=0.7,dlatent_average_id=None):
         url_pretrained_model_ffhq_average_w_id = 'https://drive.google.com/uc?id=17L6-ENX3NbMsS3MSCshychZETLPtJnbS'
         with dnnlib.util.open_url(url_pretrained_model_ffhq_average_w_id, cache_dir=config.cache_dir1) as f:
             dlatent_average_id = np.loadtxt(f)
+    #print("dlatent_average_id type:",type(dlatent_average_id))
+    #print(dlatent_average_id.shape)
     dlatent_average_id = np.reshape(dlatent_average_id,[1,14,512]).astype(np.float32)
     dlatent_average_id = tf.constant(dlatent_average_id)
 
