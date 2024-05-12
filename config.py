@@ -13,6 +13,7 @@
 result_dir = 'results'
 data_dir = 'datasets'
 cache_dir = 'cache'
+cache_dir1 = 'cache1'
 run_dir_ignore = ['results', 'datasets', 'cache','dnnlib','metrics','vae','preprocess','training','renderer']
 
 #----------------------------------------------------------------------------
