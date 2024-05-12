@@ -169,22 +169,5 @@ We have trained the model using a configuration of 4 Tesla P100 GPUs. It takes 6
 ## Contact
 If you have any questions, please contact Yu Deng (dengyu2008@hotmail.com) and Jiaolong Yang (jiaoyan@microsoft.com)
 
-## License
-
-Copyright &copy; Microsoft Corporation.
-
-Licensed under the MIT license.
-
-## Citation
-
-Please cite the following paper if this model helps your research:
-
-    @inproceedings{deng2020disentangled,
-		title={Disentangled and Controllable Face Image Generation via 3D Imitative-Contrastive Learning},
-    	author={Yu Deng and Jiaolong Yang and Dong Chen and Fang Wen and Xin Tong},
-	    booktitle={IEEE Computer Vision and Pattern Recognition},
-	    year={2020}
-	}
-
-##
-The real face images on this page are from the public FFHQ dataset released under Creative Commons BY-NC-SA 4.0 license. Detailed information can be found on its [website](https://github.com/NVlabs/ffhq-dataset).
+## 记录
+generate_images中的fake_images_out真的很难保存下来。但是只要将最下面的那些latent都设为lats1 = np.zeros((1,128+32+16+3))即设为零。就可以保证不进行调整。同时，将z_to_lambda_mapping中相应的系数化为需要的系数即可。z_to_lambda_mapping中系数的维度都是正常维度（如表情是64维，和D3DFR是同一个维度）
