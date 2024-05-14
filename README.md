@@ -171,3 +171,5 @@ If you have any questions, please contact Yu Deng (dengyu2008@hotmail.com) and J
 
 ## 记录
 generate_images中的fake_images_out真的很难保存下来。但是只要将最下面的那些latent都设为lats1 = np.zeros((1,128+32+16+3))即设为零。就可以保证不进行调整。同时，将z_to_lambda_mapping中相应的系数化为需要的系数即可。z_to_lambda_mapping中系数的维度都是正常维度（如表情是64维，和D3DFR是同一个维度）
+
+需要使用自己的表情参数和姿态参数时，需要将d3dfr重建得到的mat文件放在主目录下的epoch_20_000000文件夹即可。运行generate_images_mine.py文件
