@@ -1,10 +1,3 @@
-## *DiscoFaceGAN*: *Dis*entangled and *Co*ntrollable Face Image Generation via 3D Imitative-Contrastive Learning ##
-
-<p align="center"> 
-<img src="/images/teaser.gif">
-</p>
-
-
 This is a tensorflow implementation of the following paper:
 
 **Disentangled and Controllable Face Image Generation via 3D Imitative-Contrastive Learning**, CVPR 2020. (**_Oral_**)
@@ -56,7 +49,7 @@ The training code of our model are mainly borrowed from [StyleGAN](https://githu
 ## Testing requirements
 - Python 3.6. We recommend Anaconda3 with numpy 1.14.3 or newer.
 - Tensorflow 1.12 with GPU support.
-- CUDA toolkit 9.0 or newer, cuDNN 7.3.1 or newer. RTX2080ti，不要3090
+- CUDA toolkit 9.0 or newer, cuDNN 7.3.1 or newer. RTX2080ti，不要3090。使用3090生成的全是噪声图像
 
 ## Testing with pre-trained network
 1. Clone the repository:
